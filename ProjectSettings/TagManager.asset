@@ -6,6 +6,7 @@ TagManager:
   tags:
   - StartGame
   - ExitGame
+  - HowToPlay
   layers:
   - Default
   - TransparentFX

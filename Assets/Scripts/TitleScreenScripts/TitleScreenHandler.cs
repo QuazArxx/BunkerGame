@@ -7,13 +7,20 @@ public class TitleScreenHandler : MonoBehaviour
 {
     public void OnMouseUp ()
     {
-        if (gameObject.tag == "StartGame")
+        switch (gameObject.tag)
         {
-            SceneManager.LoadScene("MainBunkerScene", LoadSceneMode.Single);
-        }
-        else if (gameObject.tag == "ExitGame")
-        {
-            Application.Quit();
+            case "StartGame":
+                SceneManager.LoadScene("MainBunkerScene", LoadSceneMode.Single);
+                break;
+            case "HowToPlay":
+                SceneManager.LoadScene("HowToPlay", LoadSceneMode.Single);
+                break;
+            case "ExitGame":
+                Application.Quit();
+                break;
+            default:
+                Debug.Log("Something went wrong!");
+                break;
         }
     }
 }
