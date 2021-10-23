@@ -11,6 +11,10 @@
 /[Mm]emoryCaptures/
 /[Uu]serSettings/
 /[Pp]ackages/
+/[Aa]ssets/TextMesh Pro/Documentation/
+/[Aa]ssets/TextMesh Pro/Examples & Extras/
+/[Aa]ssets/TextMesh Pro/Shaders/
+/[Aa]ssets/TextMesh Pro/Sprites/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
