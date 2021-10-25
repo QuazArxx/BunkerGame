@@ -2,17 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerState : MonoBehaviour
+public class PlayerState
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static int BunkerSize;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static bool isFiend;
 }
