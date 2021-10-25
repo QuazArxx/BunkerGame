@@ -452,18 +452,18 @@
 			"type": "Sabotage",
 			"name": "Intimidation",
 			"effectTexts": {
-				"civilian": "Immediately stop another CIVILIAN from building a +5 STRUCTURE.",
-				"fiend": "Immediately (or on your turn) stop another CIVILIAN from building a +5 STRUCTURE."
+				"civilian": "Immediately stop another player's action. If they played a card, it is sent to the SCRAPYARD.",
+				"fiend": "Immediately stop another player's action. If they played a card, it is sent to the SCRAPYARD."
 			},
 			"flavorTexts": {
-				"civilian": "Okay... this time no joking around we mean business. Time to bring that BUNKER down.",
-				"fiend": "Okay... this time no joking around we mean business. Time to bring that BUNKER down."
+				"civilian": "No more being neighborly! Time to be assertive and stop your neighbor from getting ahead!",
+				"fiend": "Time to show some teeth, let 'em see those claws! Anything to stop them in their tracks."
 			},
 			"staysOnField": {
 				"civilian": false,
 				"fiend": false
 			},
-			"amountInDeck": 3
+			"amountInDeck": 4
 		}
 	]
 }
