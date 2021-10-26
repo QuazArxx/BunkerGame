@@ -1,469 +1,743 @@
 ﻿{
-	"cards": [
-		{
-			"id": "sand_bags",
-			"type": "Structure",
-			"name": "Sand Bags",
-			"values": {
-				"civilian": 1,
-				"fiend": -1
-			},
-			"effectTexts": {
-				"civilian": "Add +1 to your BUNKER.",
-				"fiend": "Send any CIVILIAN'S +1 STRUCTURE to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "They're just heavy bags with sand. Not much else to say, but they'll slow down an attack from a fiend. Good luck, you'll need it!",
-				"fiend": "You've spotted a pretty bad STRUCTURE in this BUNKER. Time to do some damage."
-			},
-			"staysOnField": {
-				"civilian": true,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+  "cards": [
+    {
+      "id": "sand_bags",
+      "type": "Structure",
+      "name": "Sand Bags",
+      "values": [
+        {
+          "civilian": 1,
+          "fiend": -1
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add +1 to your BUNKER.",
+          "fiend": "Send any CIVILIAN'S +1 STRUCTURE to the SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "They're just heavy bags with sand. Not much else to say, but they'll slow down an attack from a fiend. Good luck, you'll need it!",
+          "fiend": "You've spotted a pretty bad STRUCTURE in this BUNKER. Time to do some damage."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": true,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "chain_link_fence",
-			"type": "Structure",
-			"name": "Chain Link Fence",
-			"values": {
-				"civilian": 1,
-				"fiend": -1
-			},
-			"effectTexts": {
-				"civilian": "Add +1 to your BUNKER.",
-				"fiend": "Send any CIVILIAN'S +1 STRUCTURE to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "They're not electric or barbed but this fence will take a bit of a beating before failing on you. Good luck, you'll need it!",
-				"fiend": "That's not much of a barrier between you and them. Just hop over!"
-			},
-			"staysOnField": {
-				"civilian": true,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "chain_link_fence",
+      "type": "Structure",
+      "name": "Chain Link Fence",
+      "values": [
+        {
+          "civilian": 1,
+          "fiend": -1
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add +1 to your BUNKER.",
+          "fiend": "Send any CIVILIAN'S +1 STRUCTURE to SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "They're not electric or barbed but this fence will take a bit of a beating before failing on you. Good luck, you'll need it!",
+          "fiend": "That's not much of a barrier between you and them. Just hop over!"
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": true,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "steel_doors",
-			"type": "Structure",
-			"name": "Steel Doors",
-			"values": {
-				"civilian": 2,
-				"fiend": -2
-			},
-			"effectTexts": {
-				"civilian": "Add +2 to your BUNKER.",
-				"fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +2 to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "You have re-enforced your BUNKER with steel doors. It might not be enough to protect against an attacking FIEND. Be careful!",
-				"fiend": "Enough force will definitely break the brace on that door, no problem!"
-			},
-			"staysOnField": {
-				"civilian": true,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "steel_doors",
+      "type": "Structure",
+      "name": "Steel Doors",
+      "values": [
+        {
+          "civilian": 2,
+          "fiend": -2
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add +2 to your BUNKER.",
+          "fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +2 to the SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "You have re-enforced your BUNKER with steel doors. It might not be enough to protect against an attacking FIEND. Be careful!",
+          "fiend": "Enough force will definitely break the brace on that door, no problem!"
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": true,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "barbed_wire",
-			"type": "Structure",
-			"name": "Barbed Wire",
-			"values": {
-				"civilian": 2,
-				"fiend": -2
-			},
-			"effectTexts": {
-				"civilian": "Add +2 to your BUNKER.",
-				"fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +2 to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "You have lined your BUNKER with sharp, barbed wire. It might not be enough to protect against an attacking FIEND. Be careful!",
-				"fiend": "You have spotted some weak BUNKER STRUCTURES that will fail with enough force."
-			},
-			"staysOnField": {
-				"civilian": true,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "barbed_wire",
+      "type": "Structure",
+      "name": "Barbed Wire",
+      "values": [
+        {
+          "civilian": 2,
+          "fiend": -2
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add +2 to your BUNKER.",
+          "fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +2 to the SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "You have lined your BUNKER with sharp, barbed wire. It might not be enough to protect against an attacking FIEND. Be careful!",
+          "fiend": "You have spotted some weak BUNKER STRUCTURES that will fail with enough force."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": true,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "cinder_blocks",
-			"type": "Structure",
-			"name": "Cinder Blocks",
-			"values": {
-				"civilian": 3,
-				"fiend": -3
-			},
-			"effectTexts": {
-				"civilian": "Add +3 to your BUNKER.",
-				"fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "Hard concrete walls might be a great solution to protect yourself. Although, it might only be a temporary solution. Be vigilant!",
-				"fiend": "Even the toughest walls have a weak point to exploit. Give it a good smack!"
-			},
-			"staysOnField": {
-				"civilian": true,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "cinder_blocks",
+      "type": "Structure",
+      "name": "Cinder Blocks",
+      "values": [
+        {
+          "civilian": 3,
+          "fiend": -3
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add +3 to your BUNKER.",
+          "fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Hard concrete walls might be a great solution to protect yourself. Although, it might only be a temporary solution. Be vigilant!",
+          "fiend": "Even the toughest walls have a weak point to exploit. Give it a good smack!"
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": true,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "cinder_blocks",
-			"type": "Structure",
-			"name": "Cinder Blocks",
-			"values": {
-				"civilian": 3,
-				"fiend": -3
-			},
-			"effectTexts": {
-				"civilian": "Add +3 to your BUNKER.",
-				"fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "Hard concrete walls might be a great solution to protect yourself. Although, it might only be a temporary solution. Be vigilant!",
-				"fiend": "Even the toughest walls have a weak point to exploit. Give it a good smack!"
-			},
-			"staysOnField": {
-				"civilian": true,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "cinder_blocks",
+      "type": "Structure",
+      "name": "Cinder Blocks",
+      "values": [
+        {
+          "civilian": 3,
+          "fiend": -3
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add +3 to your BUNKER.",
+          "fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Hard concrete walls might be a great solution to protect yourself. Although, it might only be a temporary solution. Be vigilant!",
+          "fiend": "Even the toughest walls have a weak point to exploit. Give it a good smack!"
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": true,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "metal_panels",
-			"type": "Structure",
-			"name": "Metal Panels",
-			"values": {
-				"civilian": 3,
-				"fiend": -3
-			},
-			"effectTexts": {
-				"civilian": "Add +3 to your BUNKER.",
-				"fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "Weatherproof and durable, metal panels are a great addition. Although, it might only be a temporary solution. Be vigilant!",
-				"fiend": "A few loose screws is all you need to take down even the heaviest steel walls."
-			},
-			"staysOnField": {
-				"civilian": true,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "metal_panels",
+      "type": "Structure",
+      "name": "Metal Panels",
+      "values": [
+        {
+          "civilian": 3,
+          "fiend": -3
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add +3 to your BUNKER.",
+          "fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Weatherproof and durable, metal panels are a great addition. Although, it might only be a temporary solution. Be vigilant!",
+          "fiend": "A few loose screws is all you need to take down even the heaviest steel walls."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": true,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "free_bunker",
-			"type": "Structure",
-			"name": "Free Bunker",
-			"values": {
-				"civilian": 5,
-				"fiend": -5
-			},
-			"effectTexts": {
-				"civilian": "Add +3 to your BUNKER.",
-				"fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "Looks like someone left their BUNKER behind. It’s free for you to use. It’ll take some dynamite to bring this down. Be thankful!",
-				"fiend": "Did they actually leave the back door open? Time to do some serious damage."
-			},
-			"staysOnField": {
-				"civilian": true,
-				"fiend": false
-			},
-			"amountInDeck": 3
-		},
+    {
+      "id": "free_bunker",
+      "type": "Structure",
+      "name": "Free Bunker",
+      "values": [
+        {
+          "civilian": 5,
+          "fiend": -5
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add +3 to your BUNKER.",
+          "fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Looks like someone left their BUNKER behind. It’s free for you to use. It’ll take some dynamite to bring this down. Be thankful!",
+          "fiend": "Did they actually leave the back door open? Time to do some serious damage."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": true,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 3
+    },
 
-		{
-			"id": "forced_collapse",
-			"type": "Trickster",
-			"name": "Forced Collapse",
-			"effectTexts": {
-				"civilian": "Force a BUNKER to COLLAPSE.",
-				"fiend": "Force a BUNKER to COLLAPSE."
-			},
-			"flavorTexts": {
-				"civilian": "Uh-oh! Looks like your neighbor’s BUNKER is about to COLLAPSE. I’m sure it wasn’t your fault...right?",
-				"fiend": "That support beam looks quite important. I wonder what would happen if you attacked it. Only one way to find out!"
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 3
-		},
+    {
+      "id": "forced_collapse",
+      "type": "Trickster",
+      "name": "Forced Collapse",
+      "effectTexts": [
+        {
+          "civilian": "Force a BUNKER to COLLAPSE.",
+          "fiend": "Force a BUNKER to COLLAPSE."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Uh-oh! Looks like your neighbor’s BUNKER is about to COLLAPSE. I’m sure it wasn’t your fault...right?",
+          "fiend": "That support beam looks quite important. I wonder what would happen if you attacked it. Only one way to find out!"
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 3
+    },
 
-		{
-			"id": "illegal_addition",
-			"type": "Trickster",
-			"name": "Illegal Addition",
-			"effectTexts": {
-				"civilian": "Add a STRUCTURE (at x2 value) to another’s BUNKER. Maybe it’ll COLLAPSE. NO TAKE BACKS! Place with a STRUCTURE to signify x2 value.",
-				"fiend": "Add a STRUCTURE (at x2 value) to another’s BUNKER. Maybe it’ll COLLAPSE. NO TAKE BACKS! Place with a STRUCTURE to signify x2 value."
-			},
-			"flavorTexts": {
-				"civilian": "Your neighbor’s BUNKER is looking a little shabby. Why not help them out?",
-				"fiend": "Let's try and help out a CIVILIAN for a change. Or not! Maybe something will break!"
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 3
-		},
+    {
+      "id": "illegal_addition",
+      "type": "Trickster",
+      "name": "Illegal Addition",
+      "effectTexts": [
+        {
+          "civilian": "Add a STRUCTURE (at x2 value) to another’s BUNKER. Maybe it’ll COLLAPSE. NO TAKE BACKS! Place with a STRUCTURE to signify x2 value.",
+          "fiend": "Add a STRUCTURE (at x2 value) to another’s BUNKER. Maybe it’ll COLLAPSE. NO TAKE BACKS! Place with a STRUCTURE to signify x2 value."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Your neighbor’s BUNKER is looking a little shabby. Why not help them out?",
+          "fiend": "Let's try and help out a CIVILIAN for a change. Or not! Maybe something will break!"
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 3
+    },
 
-		{
-			"id": "repurpose",
-			"type": "Trickster",
-			"name": "Repurpose",
-			"effectTexts": {
-				"civilian": "Take another CIVILIAN'S STRUCTURE and add it to your own.",
-				"fiend": "Choose any two like valued STRUCTURES and send them to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "Looks like your neighbor has just the STRUCTURE you need.",
-				"fiend": "Sometimes the tools to tear down walls is right in front of you. Take one STRUCTURE to destroy another STRUCTURE."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "repurpose",
+      "type": "Trickster",
+      "name": "Repurpose",
+      "effectTexts": [
+        {
+          "civilian": "Take another CIVILIAN'S STRUCTURE and add it to your own.",
+          "fiend": "Choose any two like valued STRUCTURES and send them to the SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Looks like your neighbor has just the STRUCTURE you need.",
+          "fiend": "Sometimes the tools to tear down walls is right in front of you. Take one STRUCTURE to destroy another STRUCTURE."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "pillage",
-			"type": "Trickster",
-			"name": "Pillage",
-			"effectTexts": {
-				"civilian": "Choose a player and look at their hand and take a card of your choice.",
-				"fiend": "Choose a player and look at their hand and take a card of your choice."
-			},
-			"flavorTexts": {
-				"civilian": "One man's garbage is another man's treasure. Oh... was that not garbage?",
-				"fiend": "You're convinced that a CIVILIAN has the cure to this affliction. Time to find it!"
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "pillage",
+      "type": "Trickster",
+      "name": "Pillage",
+      "effectTexts": [
+        {
+          "civilian": "Choose a player and look at their hand and take a card of your choice.",
+          "fiend": "Choose a player and look at their hand and take a card of your choice."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "One man's garbage is another man's treasure. Oh... was that not garbage?",
+          "fiend": "You're convinced that a CIVILIAN has the cure to this affliction. Time to find it!"
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "eviction",
-			"type": "Trickster",
-			"name": "Eviction",
-			"effectTexts": {
-				"civilian": "Take another CIVILIAN'S entire BUNKER and either replace or add to your own.",
-				"fiend": "Take a CIVILIAN'S BUNKER and make it yours. That CIVILIAN is now the new FIEND."
-			},
-			"flavorTexts": {
-				"civilian": "Enough is enough! Time to kick your neighbor out of their bunker and make it yours!",
-				"fiend": "Here is your chance! Chase them out of their BUNKER and set yourself free."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "eviction",
+      "type": "Trickster",
+      "name": "Eviction",
+      "effectTexts": [
+        {
+          "civilian": "Take another CIVILIAN'S entire BUNKER and either replace or add to your own.",
+          "fiend": "Take a CIVILIAN'S BUNKER and make it yours. That CIVILIAN is now the new FIEND."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Enough is enough! Time to kick your neighbor out of their bunker and make it yours!",
+          "fiend": "Here is your chance! Chase them out of their BUNKER and set yourself free."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "skilled_builder",
-			"type": "Trickster",
-			"name": "Skilled Builder",
-			"effectTexts": {
-				"civilian": "Play two (2) STRUCTURE cards from your hand immediately.",
-				"fiend": "Play two (2) of your STRUCTURE cards to remove two (2) CIVILIAN STRUCTURES or combine their value to remove one (1)."
-			},
-			"flavorTexts": {
-				"civilian": "You've learned how to cut down the time it takes to build STRUCTURES.",
-				"fiend": "You have a destructive frenzied attack."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "skilled_builder",
+      "type": "Trickster",
+      "name": "Skilled Builder",
+      "effectTexts": [
+        {
+          "civilian": "Play two (2) STRUCTURE cards from your hand immediately.",
+          "fiend": "Play two (2) of your STRUCTURE cards to remove two (2) CIVILIAN STRUCTURES or combine their value to remove one (1)."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "You've learned how to cut down the time it takes to build STRUCTURES.",
+          "fiend": "You have a destructive frenzied attack."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "silver_tongue_devil",
-			"type": "Trickster",
-			"name": "Silver Tongue Devil",
-			"effectTexts": {
-				"civilian": "Switch hands with another CIVILIAN.",
-				"fiend": "Switch hands with another CIVILIAN."
-			},
-			"flavorTexts": {
-				"civilian": "Your negotiating abilities are unmatched. YOu confidently convinced your neighbor to trade scraps for your garbage.",
-				"fiend": "You're not just a FIEND, you're a silver tongued devil. You've convinced a CIVILIAN that you're not a FIEND and you need to trade scrap."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 3
-		},
+    {
+      "id": "silver_tongue_devil",
+      "type": "Trickster",
+      "name": "Silver Tongue Devil",
+      "effectTexts": [
+        {
+          "civilian": "Switch hands with another CIVILIAN.",
+          "fiend": "Switch hands with another CIVILIAN."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Your negotiating abilities are unmatched. YOu confidently convinced your neighbor to trade scraps for your garbage.",
+          "fiend": "You're not just a FIEND, you're a silver tongued devil. You've convinced a CIVILIAN that you're not a FIEND and you need to trade scrap."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 3
+    },
 
-		{
-			"id": "forced_fatigue",
-			"type": "Trickster",
-			"name": "Forced Fatigue",
-			"effectTexts": {
-				"civilian": "Choose a player and skip their next turn.",
-				"fiend": "Choose a player and skip their next turn."
-			},
-			"flavorTexts": {
-				"civilian": "Everyone is extremely tired, especially your neighbors. Give them a well deserved rest.",
-				"fiend": "Your constant barrage has really tired your opponents. It's time for them to call it quits for a while."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "forced_fatigue",
+      "type": "Trickster",
+      "name": "Forced Fatigue",
+      "effectTexts": [
+        {
+          "civilian": "Choose a player and skip their next turn.",
+          "fiend": "Choose a player and skip their next turn."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Everyone is extremely tired, especially your neighbors. Give them a well deserved rest.",
+          "fiend": "Your constant barrage has really tired your opponents. It's time for them to call it quits for a while."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "foresight",
-			"type": "Trickster",
-			"name": "Foresight",
-			"effectTexts": {
-				"civilian": "Send everyone's strongest STRUCTURE to the SCRAPYARD.",
-				"fiend": "Send everyone's strongest STRUCTURE to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "There is something off... It's an earthquake! Luckily You've secured your BUNKER. Too bad you didn't let anyone else know.",
-				"fiend": "Your fiendish senses have warned you of an upcoming earthquake. Take cover and watch the CIVILIANS scurry."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 3
-		},
+    {
+      "id": "foresight",
+      "type": "Trickster",
+      "name": "Foresight",
+      "effectTexts": [
+        {
+          "civilian": "Send everyone's strongest STRUCTURE to the SCRAPYARD.",
+          "fiend": "Send everyone's strongest STRUCTURE to the SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "There is something off... It's an earthquake! Luckily You've secured your BUNKER. Too bad you didn't let anyone else know.",
+          "fiend": "Your fiendish senses have warned you of an upcoming earthquake. Take cover and watch the CIVILIANS scurry."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 3
+    },
 
-		{
-			"id": "monkey_wrench",
-			"type": "Sabotage",
-			"name": "Monkey Wrench",
-			"values": {
-				"civilian": -1,
-				"fiend": -1
-			},
-			"effectTexts": {
-				"civilian": "Immediately stop another CIVILIAN from building a +1 STRUCTURE.",
-				"fiend": "Immediately (or on your turn) stop another CIVILIAN from building a +1 STRUCTURE."
-			},
-			"flavorTexts": {
-				"civilian": "Your neighbor sure does act like he has a few screws loose. Lend a helping hand.",
-				"fiend": "It's not the heaviest in the arsenal but it'll loosen some screws and tear some bags."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "monkey_wrench",
+      "type": "Sabotage",
+      "name": "Monkey Wrench",
+      "values": [
+        {
+          "civilian": -1,
+          "fiend": -1
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Immediately stop another CIVILIAN from building a +1 STRUCTURE.",
+          "fiend": "Immediately (or on your turn) stop another CIVILIAN from building a +1 STRUCTURE."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Your neighbor sure does act like he has a few screws loose. Lend a helping hand.",
+          "fiend": "It's not the heaviest in the arsenal but it'll loosen some screws and tear some bags."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "hack_saw",
-			"type": "Sabotage",
-			"name": "Hack Saw",
-			"values": {
-				"civilian": -2,
-				"fiend": -2
-			},
-			"effectTexts": {
-				"civilian": "Immediately stop another CIVILIAN from building a +2 STRUCTURE.",
-				"fiend": "Immediately (or on your turn) stop another CIVILIAN from building a +2 STRUCTURE."
-			},
-			"flavorTexts": {
-				"civilian": "I don't think your neighbor's BUNKER is cut out for the big leagues. Time to saw it down to size.",
-				"fiend": "Saw the hinges off a door or cut through some barbed wire, a hack saw can get the job done."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "hack_saw",
+      "type": "Sabotage",
+      "name": "Hack Saw",
+      "values": [
+        {
+          "civilian": -2,
+          "fiend": -2
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Immediately stop another CIVILIAN from building a +2 STRUCTURE.",
+          "fiend": "Immediately (or on your turn) stop another CIVILIAN from building a +2 STRUCTURE."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "I don't think your neighbor's BUNKER is cut out for the big leagues. Time to saw it down to size.",
+          "fiend": "Saw the hinges off a door or cut through some barbed wire, a hack saw can get the job done."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "sledgehammer",
-			"type": "Sabotage",
-			"name": "Sledgehammer",
-			"values": {
-				"civilian": -3,
-				"fiend": -3
-			},
-			"effectTexts": {
-				"civilian": "Immediately stop another CIVILIAN from building a +3 STRUCTURE.",
-				"fiend": "Immediately (or on your turn) stop another CIVILIAN from building a +3 STRUCTURE."
-			},
-			"flavorTexts": {
-				"civilian": "Is that a nail sticking out on your neighbor's STRUCTURE? A few good whacks should straighten that nail out!",
-				"fiend": "Metal panels and concrete walls are no match to the might of the sledgehammer."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 5
-		},
+    {
+      "id": "sledgehammer",
+      "type": "Sabotage",
+      "name": "Sledgehammer",
+      "values": [
+        {
+          "civilian": -3,
+          "fiend": -3
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Immediately stop another CIVILIAN from building a +3 STRUCTURE.",
+          "fiend": "Immediately (or on your turn) stop another CIVILIAN from building a +3 STRUCTURE."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Is that a nail sticking out on your neighbor's STRUCTURE? A few good whacks should straighten that nail out!",
+          "fiend": "Metal panels and concrete walls are no match to the might of the sledgehammer."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
 
-		{
-			"id": "dynamite",
-			"type": "Sabotage",
-			"name": "Dynamite",
-			"values": {
-				"civilian": -5,
-				"fiend": -5
-			},
-			"effectTexts": {
-				"civilian": "Immediately stop another CIVILIAN from building a +5 STRUCTURE.",
-				"fiend": "Immediately (or on your turn) stop another CIVILIAN from building a +5 STRUCTURE."
-			},
-			"flavorTexts": {
-				"civilian": "Okay... this time no joking around we mean business. Time to bring that BUNKER down.",
-				"fiend": "Okay... this time no joking around we mean business. Time to bring that BUNKER down."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 3
-		},
+    {
+      "id": "dynamite",
+      "type": "Sabotage",
+      "name": "Dynamite",
+      "values": [
+        {
+          "civilian": -5,
+          "fiend": -5
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Immediately stop another CIVILIAN from building a +5 STRUCTURE.",
+          "fiend": "Immediately (or on your turn) stop another CIVILIAN from building a +5 STRUCTURE."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Okay... this time no joking around we mean business. Time to bring that BUNKER down.",
+          "fiend": "Okay... this time no joking around we mean business. Time to bring that BUNKER down."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 3
+    },
 
-		{
-			"id": "intimidation",
-			"type": "Sabotage",
-			"name": "Intimidation",
-			"effectTexts": {
-				"civilian": "Immediately stop another player's action. If they played a card, it is sent to the SCRAPYARD.",
-				"fiend": "Immediately stop another player's action. If they played a card, it is sent to the SCRAPYARD."
-			},
-			"flavorTexts": {
-				"civilian": "No more being neighborly! Time to be assertive and stop your neighbor from getting ahead!",
-				"fiend": "Time to show some teeth, let 'em see those claws! Anything to stop them in their tracks."
-			},
-			"staysOnField": {
-				"civilian": false,
-				"fiend": false
-			},
-			"amountInDeck": 4
-		}
-	]
+    {
+      "id": "intimidation",
+      "type": "Sabotage",
+      "name": "Intimidation",
+      "effectTexts": [
+        {
+          "civilian": "Immediately stop another player's action. If they played a card, it is sent to the SCRAPYARD.",
+          "fiend": "Immediately stop another player's action. If they played a card, it is sent to the SCRAPYARD."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "No more being neighborly! Time to be assertive and stop your neighbor from getting ahead!",
+          "fiend": "Time to show some teeth, let 'em see those claws! Anything to stop them in their tracks."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 4
+    },
+
+    {
+      "id": "swift_scrapper",
+      "type": "Scrapyard",
+      "name": "Swift Scrapper",
+      "values": [
+        {
+          "civilian": 2,
+          "fiend": -2
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add any STRUCTURES equaling up to +2 from the SCRAPYARD to your hand.",
+          "fiend": "Take any STRUCTURES equaling up to +2 from the SCRAPYARD and use it to attack or build up someone's BUNKER to possibly COLLAPSE."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "You can carry a light load back from the SCRAPYARD quite fast.",
+          "fiend": "You hear someone rifling in the SCRAPYARD. Now is the time to pounce."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 6
+    },
+
+    {
+      "id": "wheel_barrow",
+      "type": "Scrapyard",
+      "name": "Wheel Barrow",
+      "values": [
+        {
+          "civilian": 3,
+          "fiend": -3
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add any STRUCTURES equaling up to +3 from the SCRAPYARD to your hand.",
+          "fiend": "Take any STRUCTURES equaling up to +3 from the SCRAPYARD and use it to attack or build up someone's BUNKER to possibly COLLAPSE."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "You found a trusty wheel barrow that can carry a few extra things.",
+          "fiend": "That is one squeaky wheel barrow you hear close-by. Try sneaking up on them."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 4
+    },
+
+    {
+      "id": "pickup_truck",
+      "type": "Scrapyard",
+      "name": "Pickup Truck",
+      "values": [
+        {
+          "civilian": 4,
+          "fiend": -4
+        }
+      ],
+      "effectTexts": [
+        {
+          "civilian": "Add any STRUCTURES equaling up to +4 from the SCRAPYARD to your hand.",
+          "fiend": "Take any STRUCTURES equaling up to +4 from the SCRAPYARD and use it to attack or build up someone's BUNKER to possibly COLLAPSE."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "You have found a rusty pickup truck. And it still has gas!",
+          "fiend": "There's a hum froma  large diesel engine approaching. Run up on them."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": false,
+          "fiend": false
+        }
+      ],
+      "amountInDeck": 5
+    },
+
+    {
+      "id": "fiend",
+      "type": "fiend",
+      "name": "You're a Fiend",
+      "effectTexts": [
+        {
+          "civilian": "You are now the FIEND.",
+          "fiend": "You are now a CIVILIAN."
+        }
+      ],
+      "flavorTexts": [
+        {
+          "civilian": "Your turn is over. Place this card in front of you so all CIVILIANS can identify the FIEND. Discard your BUNKER to the SCRAPYARD and then shuffle the SCRAPYARD back into the deck. Be sure to follow the FIEND descriptions on all cards. Starting on your second turn as a FIEND, you can give this card to any CIVILIAN that does not have any STRUCTURES. They become the new FIEND and you can build your BUNKER again.",
+          "fiend": "You may give this card to any CIVILIAN you choose. They are now the new FIEND."
+        }
+      ],
+      "staysOnField": [
+        {
+          "civilian": true,
+          "fiend": true
+        }
+      ],
+      "amountInDeck": 5
+    }
+  ]
 }
