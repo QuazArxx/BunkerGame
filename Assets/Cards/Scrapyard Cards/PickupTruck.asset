@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 974a1bdc5de002545b42b6fe9ddf5e0d, type: 3}
+  m_Name: PickupTruck
+  m_EditorClassIdentifier: 
+  name: Pickup truck
+  civEffectText: Add any STRUCTURES equaling up to +4 from the SCRAPYARD to your
+    hand.
+  civFlavorText: You have found a rusty pickup truck. And it still has gas!
+  fiendEffectText: Take any STRUCTURES equaling up to +4 from the SCRAPYARD and use
+    it to attack or build up someone's BUNKER to possibly COLLAPSE.
+  fiendFlavorText: There's a hum froma  large diesel engine approaching. Run up on
+    them.
+  value: 4
+  amountInDeck: 5
+  staysOnField: 0
