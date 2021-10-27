@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8060de970ad4e46d1ab5bed4f107901d, type: 3}
+  m_Name: ForcedCollapse
+  m_EditorClassIdentifier: 
+  name: Forced Collapse
+  civEffectText: Force a BUNKER to COLLAPSE.
+  civFlavorText: "Uh-oh! Looks like your neighbor\u2019s BUNKER is about to COLLAPSE.
+    I\u2019m sure it wasn\u2019t your fault...right?"
+  fiendEffectText: Force a BUNKER to COLLAPSE.
+  fiendFlavorText: That support beam looks quite important. I wonder what would happen
+    if you attacked it. Only one way to find out!
+  amountInDeck: 3
+  staysOnField: 0

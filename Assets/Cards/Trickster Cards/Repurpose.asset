@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8060de970ad4e46d1ab5bed4f107901d, type: 3}
+  m_Name: Repurpose
+  m_EditorClassIdentifier: 
+  name: Repurpose
+  civEffectText: Take another CIVILIAN'S STRUCTURE and add it to your own.
+  civFlavorText: Looks like your neighbor has just the STRUCTURE you need.
+  fiendEffectText: Choose any two like valued STRUCTURES and send them to the SCRAPYARD.
+  fiendFlavorText: Sometimes the tools to tear down walls is right in front of you.
+    Take one STRUCTURE to destroy another STRUCTURE.
+  amountInDeck: 5
+  staysOnField: 0

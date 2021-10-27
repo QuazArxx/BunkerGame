@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cb77b619a21ba479f4c8283a0321dc, type: 3}
+  m_Name: Dynamite
+  m_EditorClassIdentifier: 
+  name: Dynamite
+  civEffectText: Immediately stop another CIVILIAN from building a +5 STRUCTURE.
+  civFlavorText: Okay... this time no joking around we mean business. Time to bring
+    that BUNKER down.
+  fiendEffectText: Immediately (or on your turn) stop another CIVILIAN from building
+    a +5 STRUCTURE.
+  fiendFlavorText: Okay... this time no joking around we mean business. Time to bring
+    that BUNKER down.
+  value: 5
+  amountInDeck: 3
+  staysOnField: 0

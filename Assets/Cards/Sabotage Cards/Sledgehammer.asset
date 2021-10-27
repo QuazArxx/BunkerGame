@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cb77b619a21ba479f4c8283a0321dc, type: 3}
+  m_Name: Sledgehammer
+  m_EditorClassIdentifier: 
+  name: Sledgehammer
+  civEffectText: Immediately stop another CIVILIAN from building a +3 STRUCTURE.
+  civFlavorText: Is that a nail sticking out on your neighbor's STRUCTURE? A few
+    good whacks should straighten that nail out!
+  fiendEffectText: Immediately (or on your turn) stop another CIVILIAN from building
+    a +3 STRUCTURE.
+  fiendFlavorText: Metal panels and concrete walls are no match to the might of the
+    sledgehammer.
+  value: 3
+  amountInDeck: 5
+  staysOnField: 0

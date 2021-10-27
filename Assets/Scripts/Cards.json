@@ -156,37 +156,6 @@
     },
 
     {
-      "id": "cinder_blocks",
-      "type": "Structure",
-      "name": "Cinder Blocks",
-      "values": [
-        {
-          "civilian": 3,
-          "fiend": -3
-        }
-      ],
-      "effectTexts": [
-        {
-          "civilian": "Add +3 to your BUNKER.",
-          "fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD."
-        }
-      ],
-      "flavorTexts": [
-        {
-          "civilian": "Hard concrete walls might be a great solution to protect yourself. Although, it might only be a temporary solution. Be vigilant!",
-          "fiend": "Even the toughest walls have a weak point to exploit. Give it a good smack!"
-        }
-      ],
-      "staysOnField": [
-        {
-          "civilian": true,
-          "fiend": false
-        }
-      ],
-      "amountInDeck": 5
-    },
-
-    {
       "id": "metal_panels",
       "type": "Structure",
       "name": "Metal Panels",
@@ -229,8 +198,8 @@
       ],
       "effectTexts": [
         {
-          "civilian": "Add +3 to your BUNKER.",
-          "fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD."
+          "civilian": "Add +5 to your BUNKER.",
+          "fiend": "Send any CIVILIAN'S STRUCTURE(S) equaling up to +5 to the SCRAPYARD."
         }
       ],
       "flavorTexts": [

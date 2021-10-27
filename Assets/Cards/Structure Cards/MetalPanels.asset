@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618ba95fc6ef8c145b06ea0e29aba69f, type: 3}
+  m_Name: MetalPanels
+  m_EditorClassIdentifier: 
+  name: Metal Panels
+  civEffectText: Add +3 to your BUNKER.
+  civFlavorText: Weatherproof and durable, metal panels are a great addition. Although,
+    it might only be a temporary solution. Be vigilant!
+  civStaysOnField: 1
+  fiendEffectText: Send any CIVILIAN'S STRUCTURE(S) equaling up to +3 to the SCRAPYARD.
+  fiendFlavorText: A few loose screws is all you need to take down even the heaviest
+    steel walls.
+  fiendStaysOnField: 0
+  value: 3
+  amountInDeck: 5
