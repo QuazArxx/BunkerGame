@@ -16,6 +16,25 @@ public class StructureCard : ScriptableObject
     public string fiendFlavorText;
     public bool fiendStaysOnField;
 
+    public Sprite cardDisplay;
+
     public int value;
     public int amountInDeck;
+
+    public void ChangeBunkerSize()
+    {
+        if (PlayerState.isFiend == true)
+        {
+            if (PlayerState.BunkerSize >= value)
+            {
+                PlayerState.BunkerSize -= value;
+            }
+        }
+        else
+        {
+            PlayerState.BunkerSize += value;
+        }
+
+        Debug.Log($"New Bunker Size: {PlayerState.BunkerSize}");
+    }
 }
