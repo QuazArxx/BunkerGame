@@ -13,5 +13,7 @@ public class FiendCard : ScriptableObject
     public string fiendEffectText;
     public string fiendFlavorText;
 
+    public int amountInDeck;
+
     public bool staysOnField;
 }

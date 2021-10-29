@@ -23,4 +23,5 @@ MonoBehaviour:
   fiendEffectText: You may give this card to any CIVILIAN you choose. They are now
     the new FIEND.
   fiendFlavorText: You are now a CIVILIAN.
+  amountInDeck: 5
   staysOnField: 1
