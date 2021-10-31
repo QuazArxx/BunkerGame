@@ -7,4 +7,6 @@ public static class PlayerState
     public static int BunkerSize { get; set; }
 
     public static bool isFiend { get; set; }
+
+    public static List<string> hand;
 }

@@ -16,13 +16,12 @@ public class GameState : MonoBehaviour
     private static TricksterCard[] tricksterCards;
     private static FiendCard[] fiendCards;
 
-    public List<string> deck;
+    public static List<string> deck;
 
     // Start is called before the first frame update
     void Start()
     {
         PlayerState.BunkerSize = 0;
-
         PlayerState.isFiend = false;
 
         structureCards = Resources.LoadAll<StructureCard>("Structure Cards");
@@ -32,6 +31,8 @@ public class GameState : MonoBehaviour
         fiendCards = Resources.LoadAll<FiendCard>("Fiend Cards");
 
         PlayCards();
+
+        DrawCards(5);
     }
 
     // Update is called once per frame
@@ -84,8 +85,6 @@ public class GameState : MonoBehaviour
     {
         List<string> newDeck = new List<string>();
 
-        Debug.Log(structureCards.Length);
-
         // Instantiates all Structure Cards
         foreach (StructureCard card in structureCards)
         {
@@ -132,6 +131,15 @@ public class GameState : MonoBehaviour
         }
 
         return newDeck;
+    }
+
+    public void DrawCards (int amount)
+    {
+        for (int x = 0; x < amount; x++)
+        {
+            PlayerState.hand.Add(deck[x]);
+        }
+        Debug.Log(PlayerState.hand.Count);
     }
 
     IEnumerator BunkerCollapse(string message, float delay)
