@@ -7,6 +7,12 @@ TagManager:
   - StartGame
   - ExitGame
   - HowToPlay
+  - Deck
+  - Structure
+  - Sabotage
+  - Scrapyard
+  - Trickster
+  - Fiend
   layers:
   - Default
   - TransparentFX

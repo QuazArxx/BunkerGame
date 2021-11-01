@@ -7,6 +7,7 @@ public class SabotageCard : ScriptableObject
 {
     public new string name;
 
+    public string tag = "Sabotage";
     public string civEffectText;
     public string civFlavorText;
 

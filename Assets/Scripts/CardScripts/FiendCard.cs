@@ -7,6 +7,7 @@ public class FiendCard : ScriptableObject
 {
     public new string name;
 
+    public string tag = "Fiend";
     public string civEffectText;
     public string civFlavorText;
 

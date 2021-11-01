@@ -8,6 +8,7 @@ public class StructureCard : ScriptableObject
 {
     public new string name;
 
+    public string tag = "Structure";
     public string civEffectText;
     public string civFlavorText;
     public bool civStaysOnField;

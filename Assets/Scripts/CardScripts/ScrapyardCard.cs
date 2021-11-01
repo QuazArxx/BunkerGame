@@ -7,6 +7,7 @@ public class ScrapyardCard : ScriptableObject
 {
     public new string name;
 
+    public string tag = "Scrapyard";
     public string civEffectText;
     public string civFlavorText;
 

@@ -7,6 +7,7 @@ public class TricksterCard : ScriptableObject
 {
     public new string name;
 
+    public string tag = "Trickster";
     public string civEffectText;
     public string civFlavorText;
 
