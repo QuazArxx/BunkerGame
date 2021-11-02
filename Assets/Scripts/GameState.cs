@@ -17,6 +17,7 @@ public class GameState : MonoBehaviour
     private static TricksterCard[] tricksterCards;
     private static FiendCard[] fiendCards;
 
+    public static List<GameObject> cardObjects;
     public static List<string> deck;
     public static List<string> cardTypes;
 
@@ -26,7 +27,9 @@ public class GameState : MonoBehaviour
         PlayerState.BunkerSize = 0;
         PlayerState.isFiend = false;
 
-        deckLocation = GameObject.FindWithTag("Deck");
+        cardObjects = new List<GameObject>();
+
+        deckLocation = GameObject.Find("Deck");
 
         structureCards = Resources.LoadAll<StructureCard>("Structure Cards");
         sabotageCards = Resources.LoadAll<SabotageCard>("Sabotage Cards");
@@ -47,6 +50,8 @@ public class GameState : MonoBehaviour
                 PlayerState.isFiend = true;
                 Debug.Log($"Player is the fiend: {PlayerState.isFiend}");
             }
+
+            Selectable.faceUp = true;
         }
 
         if (PlayerState.BunkerSize > 10)
@@ -96,7 +101,7 @@ public class GameState : MonoBehaviour
     {
         for (int x = 0; x < deck.Count; x++)
         {
-            GameObject newCard = Instantiate(cardPrefab, transform.position, Quaternion.identity);
+            GameObject newCard = Instantiate(cardPrefab, transform.position, Quaternion.identity, deckLocation.transform);
 
             newCard.name = deck[x];
             newCard.tag = cardTypes[x];
