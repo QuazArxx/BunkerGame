@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class GameState : MonoBehaviour
 {
+    private static int drawCardCount;
     public Text collapse;
     public Sprite[] sprites;
     public GameObject cardPrefab;
@@ -27,6 +28,10 @@ public class GameState : MonoBehaviour
         PlayerState.BunkerSize = 0;
         PlayerState.isFiend = false;
 
+        PlayerState.hand = new List<GameObject>();
+
+        drawCardCount = 0;
+
         cardObjects = new List<GameObject>();
 
         deckLocation = GameObject.Find("Deck");
@@ -38,20 +43,24 @@ public class GameState : MonoBehaviour
         fiendCards = Resources.LoadAll<FiendCard>("Fiend Cards");
 
         PlayCards();
+
+        if (PlayerState.hand == null)
+        {
+            Debug.Log($"Current hand size is null");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        foreach (string card in PlayerState.hand)
+        foreach (GameObject card in PlayerState.hand)
         {
-            if (card == "Fiend")
+            if (card.name == "Fiend")
             {
                 PlayerState.isFiend = true;
-                Debug.Log($"Player is the fiend: {PlayerState.isFiend}");
             }
 
-            Selectable.faceUp = true;
+            card.GetComponent<Selectable>().faceUp = true;
         }
 
         if (PlayerState.BunkerSize > 10)
@@ -94,17 +103,19 @@ public class GameState : MonoBehaviour
 
         BunkerDeal();
 
-        PlayerState.hand = DrawCards(5);
+        DrawCards(5);
     }
 
     void BunkerDeal()
     {
         for (int x = 0; x < deck.Count; x++)
         {
-            GameObject newCard = Instantiate(cardPrefab, transform.position, Quaternion.identity, deckLocation.transform);
+            GameObject newCard = Instantiate(cardPrefab, deckLocation.transform.position, Quaternion.identity, deckLocation.transform);
 
             newCard.name = deck[x];
             newCard.tag = cardTypes[x];
+
+            cardObjects.Add(newCard);
         }
     }
 
@@ -212,16 +223,13 @@ public class GameState : MonoBehaviour
         return newCardType;
     }
 
-    public static List<string> DrawCards (int amount)
+    public static void DrawCards(int amount)
     {
-        List<string> newHand = new List<string>();
-
         for (int x = 0; x < amount; x++)
         {
-            newHand.Add(deck[x]);
+            PlayerState.hand.Add(cardObjects[drawCardCount]);
+            drawCardCount++;
         }
-        
-        return newHand;
     }
 
     IEnumerator BunkerCollapse(string message, float delay)

@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class PlayerState
+public class PlayerState
 {
     public static int BunkerSize { get; set; }
 
     public static bool isFiend { get; set; }
+    public static bool isPlayersTurn { get; set; }
 
-    public static List<string> hand;
+    public static List<GameObject> hand;
 }

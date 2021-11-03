@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Selectable : MonoBehaviour
 {
-    public static bool faceUp = false;
+    public bool faceUp = false;
 
     // Start is called before the first frame update
     void Start()

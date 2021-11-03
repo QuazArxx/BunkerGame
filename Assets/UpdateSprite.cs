@@ -10,6 +10,8 @@ public class UpdateSprite : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private GameState gameState;
 
+    private Selectable selectable;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,12 +29,13 @@ public class UpdateSprite : MonoBehaviour
             i++;
         }
         spriteRenderer = GetComponent<SpriteRenderer>();
+        selectable = GetComponent<Selectable>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Selectable.faceUp == true)
+        if (selectable.faceUp == true)
         {
             spriteRenderer.sprite = cardFace;
         }

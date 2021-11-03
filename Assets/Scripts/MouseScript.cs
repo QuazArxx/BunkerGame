@@ -5,18 +5,13 @@ using UnityEngine.UI;
 
 public class MouseScript : MonoBehaviour
 {
-    public StructureCard card;
-    public Image cardImage;
-
-    private void Start()
-    {
-        cardImage.sprite = card.cardDisplay;
-    }
-
     public void OnMouseUp()
     {
-        card.ChangeBunkerSize();
+        if (gameObject.tag == "Deck")
+        {
+            GameState.DrawCards(1);
+        }
 
-        Debug.Log($"Current Bunker Size: {PlayerState.BunkerSize}");
+        Debug.Log($"Cards in hand: {PlayerState.hand.Count}");
     }
 }
