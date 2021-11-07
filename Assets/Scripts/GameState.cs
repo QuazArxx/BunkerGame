@@ -12,11 +12,11 @@ public class GameState : MonoBehaviour
     public GameObject cardPrefab;
     public GameObject deckLocation;
 
-    private static StructureCard[] structureCards;
-    private static SabotageCard[] sabotageCards;
-    private static ScrapyardCard[] scrapyardCards;
-    private static TricksterCard[] tricksterCards;
-    private static FiendCard[] fiendCards;
+    public static StructureCard[] structureCards;
+    public static SabotageCard[] sabotageCards;
+    public static ScrapyardCard[] scrapyardCards;
+    public static TricksterCard[] tricksterCards;
+    public static FiendCard[] fiendCards;
 
     public static List<GameObject> cardObjects;
     public static List<string> deck;
@@ -53,6 +53,7 @@ public class GameState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float handOffset = -6f;
         foreach (GameObject card in PlayerState.hand)
         {
             if (card.name == "Fiend")
@@ -61,8 +62,21 @@ public class GameState : MonoBehaviour
             }
 
             card.GetComponent<Selectable>().faceUp = true;
+
+            card.transform.position = new Vector3(0f + handOffset, -3f, 0f);
+            handOffset += 2.5f;
         }
 
+        float fieldOffset = -6f;
+        if (PlayerState.field != null)
+        {
+            foreach (GameObject card in PlayerState.field)
+            {
+                card.transform.position = new Vector3(0f + fieldOffset, 0f, 0f);
+                fieldOffset += 2.5f;
+            }
+        }
+        
         if (PlayerState.BunkerSize > 10)
         {
             StartCoroutine(BunkerCollapse("Your Bunker Collapsed!", 3));
@@ -108,14 +122,18 @@ public class GameState : MonoBehaviour
 
     void BunkerDeal()
     {
+        float offset = 0.03f;
+
         for (int x = 0; x < deck.Count; x++)
         {
-            GameObject newCard = Instantiate(cardPrefab, deckLocation.transform.position, Quaternion.identity, deckLocation.transform);
+            GameObject newCard = Instantiate(cardPrefab, new Vector3(deckLocation.transform.position.x, deckLocation.transform.position.y, deckLocation.transform.position.z + offset), Quaternion.identity, deckLocation.transform);
 
             newCard.name = deck[x];
             newCard.tag = cardTypes[x];
 
             cardObjects.Add(newCard);
+
+            offset += 0.01f;
         }
     }
 

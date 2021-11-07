@@ -1,0 +1,11 @@
+-- Code Scriptable Objects methods
+
+-- Remove player field when bunker collapses
+
+-- Change how methods work as a fiend
+
+-- If player is a fiend, flip cards over (might need separate sprites that are upside down)
+
+-- Change if player draws 2 fiend cards at start
+
+-- Talk to Kev about board assets (Design the field for structures/make a box for what the hand is)

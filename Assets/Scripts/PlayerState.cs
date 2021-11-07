@@ -9,5 +9,6 @@ public class PlayerState
     public static bool isFiend { get; set; }
     public static bool isPlayersTurn { get; set; }
 
-    public static List<GameObject> hand;
+    public static List<GameObject> hand = new List<GameObject>();
+    public static List<GameObject> field = new List<GameObject>();
 }

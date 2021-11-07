@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class UpdateSprite : MonoBehaviour
 {
-    public Sprite cardFace;
+    public Sprite civFace;
+    public Sprite fiendFace;
     public Sprite cardBack;
 
     private SpriteRenderer spriteRenderer;
@@ -37,6 +38,7 @@ public class UpdateSprite : MonoBehaviour
     {
         if (selectable.faceUp == true)
         {
+
             spriteRenderer.sprite = cardFace;
         }
         else
