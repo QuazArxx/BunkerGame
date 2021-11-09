@@ -17,7 +17,7 @@ public class MouseScript : MonoBehaviour
         switch (gameObject.tag)
         {
             case "Deck":
-                GameState.DrawCards(5 - PlayerState.hand.Count);
+                GameState.DrawCards(6 - PlayerState.hand.Count);
                 break;
             case "Structure":
                 foreach (StructureCard card in GameState.structureCards)
@@ -31,6 +31,18 @@ public class MouseScript : MonoBehaviour
 
                 PlayerState.hand.Remove(gameObject);
                 PlayerState.field.Add(gameObject);
+                break;
+            case "Trickster":
+                foreach (TricksterCard card in GameState.tricksterCards)
+                {
+                    if (gameObject.name == card.name && gameObject.name == "Forced Collapse")
+                    {
+                        card.ForceCollapse();
+                    }
+                }
+                PlayerState.hand.Remove(gameObject);
+                GameState.discard.Add(gameObject);
+                
                 break;
             default:
                 Debug.Log("Something went wrong!");

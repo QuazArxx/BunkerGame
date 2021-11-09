@@ -8,7 +8,8 @@ public class GameState : MonoBehaviour
 {
     private static int drawCardCount;
     public Text collapse;
-    public Sprite[] sprites;
+    public Sprite[] civSprites;
+    public Sprite[] fiendSprites;
     public GameObject cardPrefab;
     public GameObject deckLocation;
 
@@ -21,6 +22,7 @@ public class GameState : MonoBehaviour
     public static List<GameObject> cardObjects;
     public static List<string> deck;
     public static List<string> cardTypes;
+    public static List<GameObject> discard = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -76,6 +78,33 @@ public class GameState : MonoBehaviour
                 fieldOffset += 2.5f;
             }
         }
+
+        float discardOffset = 0.03f;
+        if (discard != null)
+        {
+            foreach (GameObject card in discard)
+            {
+                card.transform.position = new Vector3(7f, 3f, 0f + discardOffset);
+                discardOffset += 0.01f;
+            }
+        }
+
+        foreach (GameObject card in PlayerState.hand)
+        {
+            if (card.name == "Fiend")
+            {
+                PlayerState.hand.Remove(card);
+                
+                foreach (GameObject fieldCard in PlayerState.field)
+                {
+                    discard.Add(fieldCard);
+                }
+
+                PlayerIsFiend();
+                PlayerState.field.Add(card);
+                break;
+            }
+        }
         
         if (PlayerState.BunkerSize > 10)
         {
@@ -117,7 +146,7 @@ public class GameState : MonoBehaviour
 
         BunkerDeal();
 
-        DrawCards(5);
+        DrawCards(6);
     }
 
     void BunkerDeal()
@@ -252,12 +281,29 @@ public class GameState : MonoBehaviour
 
     IEnumerator BunkerCollapse(string message, float delay)
     {
+        foreach (GameObject card in PlayerState.field)
+        {
+            discard.Add(card);
+        }
+
+        PlayerState.field.Clear();
+
         PlayerState.BunkerSize = 0;
         collapse.text = message;
         collapse.enabled = true;
 
         yield return new WaitForSeconds(delay);
         collapse.enabled = false;
+    }
+
+    public static void PlayerIsFiend()
+    {
+        if (PlayerState.field != null)
+        {
+            PlayerState.field.Clear();
+        }
+
+        DrawCards(6 - PlayerState.hand.Count);
     }
 
     void EndGame()

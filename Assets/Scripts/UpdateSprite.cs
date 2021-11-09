@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class UpdateSprite : MonoBehaviour
 {
-    public Sprite civFace;
-    public Sprite fiendFace;
+    public Sprite civCardFace;
+    public Sprite fiendCardFace;
     public Sprite cardBack;
 
     private SpriteRenderer spriteRenderer;
@@ -24,7 +24,8 @@ public class UpdateSprite : MonoBehaviour
         {
             if (this.name == card)
             {
-                cardFace = gameState.sprites[i];
+                civCardFace = gameState.civSprites[i];
+                fiendCardFace = gameState.fiendSprites[i];
                 break;
             }
             i++;
@@ -38,8 +39,14 @@ public class UpdateSprite : MonoBehaviour
     {
         if (selectable.faceUp == true)
         {
-
-            spriteRenderer.sprite = cardFace;
+            if (PlayerState.isFiend == true)
+            {
+                spriteRenderer.sprite = fiendCardFace;
+            }
+            else
+            {
+                spriteRenderer.sprite = civCardFace;
+            }
         }
         else
         {

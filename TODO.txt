@@ -9,3 +9,5 @@
 -- Change if player draws 2 fiend cards at start
 
 -- Talk to Kev about board assets (Design the field for structures/make a box for what the hand is)
+
+-- Change player only allowed to play 1 card when it's their turn

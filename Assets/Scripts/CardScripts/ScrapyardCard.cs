@@ -18,4 +18,12 @@ public class ScrapyardCard : ScriptableObject
     public int amountInDeck;
 
     public bool staysOnField;
+
+    /*public void GrabFromScrapyard()
+    {
+        if (PlayerState.isFiend == false)
+        {
+
+        }
+    }*/
 }

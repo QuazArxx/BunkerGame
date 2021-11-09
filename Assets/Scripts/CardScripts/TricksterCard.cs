@@ -17,4 +17,16 @@ public class TricksterCard : ScriptableObject
     public int amountInDeck;
 
     public bool staysOnField;
+
+    public void ForceCollapse()
+    {
+        PlayerState.BunkerSize = 0;
+
+        foreach (GameObject card in PlayerState.field)
+        {
+            GameState.discard.Add(card);
+        }
+
+        PlayerState.field.Clear();
+    }
 }
