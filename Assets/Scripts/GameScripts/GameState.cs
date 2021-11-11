@@ -29,7 +29,6 @@ public class GameState : MonoBehaviour
     {
         PlayerState.BunkerSize = 0;
         PlayerState.isFiend = false;
-
         PlayerState.hand = new List<GameObject>();
 
         drawCardCount = 0;
