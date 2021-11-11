@@ -8,6 +8,8 @@ public class GameState : MonoBehaviour
 {
     private static int drawCardCount;
     public Text collapse;
+    public Text cardNameText;
+    public Text cardDescriptionText;
     public Sprite[] civSprites;
     public Sprite[] fiendSprites;
     public GameObject cardPrefab;

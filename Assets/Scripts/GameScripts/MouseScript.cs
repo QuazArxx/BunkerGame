@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MouseScript : MonoBehaviour
 {
-    static GameObject CardText;
+    GameState gameState;
     Text cardNameText;
     Text cardDescriptionText;
     StructureCard structureCard;
@@ -18,9 +18,9 @@ public class MouseScript : MonoBehaviour
 
     private void Awake()
     {
-        CardText = GameObject.Find("Main Camera");
-        cardNameText = CardText.GetComponent<Text>();
-        cardDescriptionText = CardText.GetComponent<Text>();
+        gameState = FindObjectOfType<GameState>();
+        cardNameText = gameState.cardNameText;
+        cardDescriptionText = gameState.cardDescriptionText;
     }
 
     public void OnMouseUp()
@@ -73,6 +73,8 @@ public class MouseScript : MonoBehaviour
                         cardNameText.text = card.name;
                         cardDescriptionText.text = card.civEffectText;
 
+                        gameState.cardNameText.text = cardNameText.text;
+                        gameState.cardDescriptionText.text = cardDescriptionText.text;
                         
                     }
                 }

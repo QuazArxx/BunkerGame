@@ -13,6 +13,7 @@ TagManager:
   - Scrapyard
   - Trickster
   - Fiend
+  - Canvas
   layers:
   - Default
   - TransparentFX
