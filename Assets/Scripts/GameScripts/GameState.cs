@@ -14,6 +14,7 @@ public class GameState : MonoBehaviour
     public Sprite[] fiendSprites;
     public GameObject cardPrefab;
     public GameObject deckLocation;
+    public Image panel;
 
     public static StructureCard[] structureCards;
     public static SabotageCard[] sabotageCards;

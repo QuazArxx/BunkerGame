@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: WheelBarrow
   m_EditorClassIdentifier: 
   name: Wheel Barrow
-  civEffectText: dd any STRUCTURES equaling up to +3 from the SCRAPYARD to your hand.
+  tag: Scrapyard
+  civEffectText: Add any STRUCTURES equaling up to +3 from the SCRAPYARD to your
+    hand.
   civFlavorText: You found a trusty wheel barrow that can carry a few extra things.
   fiendEffectText: Take any STRUCTURES equaling up to +3 from the SCRAPYARD and use
     it to attack or build up someone's BUNKER to possibly COLLAPSE.

@@ -9,10 +9,9 @@ public class MouseScript : MonoBehaviour
     GameState gameState;
     Text cardNameText;
     Text cardDescriptionText;
-    StructureCard structureCard;
-    SabotageCard sabotageCard;
-    ScrapyardCard scrapyardCard;
-    TricksterCard tricksterCard;
+
+    Color alpha;
+    float alphaAmount = 0.47f;
 
     List<GameObject> field = new List<GameObject>();
 
@@ -21,6 +20,8 @@ public class MouseScript : MonoBehaviour
         gameState = FindObjectOfType<GameState>();
         cardNameText = gameState.cardNameText;
         cardDescriptionText = gameState.cardDescriptionText;
+
+        alpha = gameState.panel.color;
     }
 
     public void OnMouseUp()
@@ -70,27 +71,69 @@ public class MouseScript : MonoBehaviour
                 {
                     if (gameObject.name == card.name)
                     {
+                        alpha.a = alphaAmount;
+                        gameState.panel.color = alpha;
+
                         cardNameText.text = card.name;
                         cardDescriptionText.text = card.civEffectText;
 
                         gameState.cardNameText.text = cardNameText.text;
                         gameState.cardDescriptionText.text = cardDescriptionText.text;
+
                         
+
                     }
                 }
-
-                Debug.Log($"Hovering over a Structure Card");
                 break;
             case "Trickster":
                 foreach (TricksterCard card in GameState.tricksterCards)
                 {
                     if (gameObject.name == card.name)
                     {
-                        cardNameText.text = "Some Card";
+                        cardNameText.text = card.name;
                         cardDescriptionText.text = card.civEffectText;
-                        Debug.Log($"Hovering over {card.name}");
+
+                        gameState.cardNameText.text = cardNameText.text;
+                        gameState.cardDescriptionText.text = cardDescriptionText.text;
+
+                        alpha.a = alphaAmount;
+                        gameState.panel.color = alpha;
                     }
                 }
+                break;
+            case "Sabotage":
+                foreach (SabotageCard card in GameState.sabotageCards)
+                {
+                    if (gameObject.name == card.name)
+                    {
+                        cardNameText.text = card.name;
+                        cardDescriptionText.text = card.civEffectText;
+
+                        gameState.cardNameText.text = cardNameText.text;
+                        gameState.cardDescriptionText.text = cardDescriptionText.text;
+
+                        alpha.a = alphaAmount;
+                        gameState.panel.color = alpha;
+                    }
+                }
+                break;
+            case "Scrapyard":
+                foreach (ScrapyardCard card in GameState.scrapyardCards)
+                {
+                    if (gameObject.name == card.name)
+                    {
+                        cardNameText.text = card.name;
+                        cardDescriptionText.text = card.civEffectText;
+
+                        gameState.cardNameText.text = cardNameText.text;
+                        gameState.cardDescriptionText.text = cardDescriptionText.text;
+
+                        alpha.a = alphaAmount;
+                        gameState.panel.color = alpha;
+                    }
+                }
+                break;
+            case "Deck":
                 break;
             default:
                 Debug.Log("Something went wrong!");
@@ -109,6 +152,9 @@ public class MouseScript : MonoBehaviour
                     {
                         cardNameText.text = "";
                         cardDescriptionText.text = "";
+
+                        alpha.a = 0;
+                        gameState.panel.color = alpha;
                     }
                 }
                 break;
@@ -119,8 +165,39 @@ public class MouseScript : MonoBehaviour
                     {
                         cardNameText.text = "";
                         cardDescriptionText.text = "";
+
+                        alpha.a = 0;
+                        gameState.panel.color = alpha;
                     }
                 }
+                break;
+            case "Sabotage":
+                foreach (SabotageCard card in GameState.sabotageCards)
+                {
+                    if (gameObject.name == card.name)
+                    {
+                        cardNameText.text = "";
+                        cardDescriptionText.text = "";
+
+                        alpha.a = 0;
+                        gameState.panel.color = alpha;
+                    }
+                }
+                break;
+            case "Scrapyard":
+                foreach (ScrapyardCard card in GameState.scrapyardCards)
+                {
+                    if (gameObject.name == card.name)
+                    {
+                        cardNameText.text = "";
+                        cardDescriptionText.text = "";
+
+                        alpha.a = 0;
+                        gameState.panel.color = alpha;
+                    }
+                }
+                break;
+            case "Deck":
                 break;
             default:
                 Debug.Log("Something went wrong!");
