@@ -11,7 +11,7 @@ public class MouseScript : MonoBehaviour
     Text cardDescriptionText;
 
     Color alpha;
-    float alphaAmount = 0.47f;
+    float alphaAmount = 0.75f;
 
     List<GameObject> field = new List<GameObject>();
 
@@ -71,17 +71,22 @@ public class MouseScript : MonoBehaviour
                 {
                     if (gameObject.name == card.name)
                     {
-                        alpha.a = alphaAmount;
-                        gameState.panel.color = alpha;
-
                         cardNameText.text = card.name;
-                        cardDescriptionText.text = card.civEffectText;
+
+                        if (PlayerState.isFiend == true)
+                        {
+                            cardDescriptionText.text = card.fiendEffectText;
+                        }
+                        else
+                        {
+                            cardDescriptionText.text = card.civEffectText;
+                        }
 
                         gameState.cardNameText.text = cardNameText.text;
                         gameState.cardDescriptionText.text = cardDescriptionText.text;
 
-                        
-
+                        alpha.a = alphaAmount;
+                        gameState.panel.color = alpha;
                     }
                 }
                 break;
@@ -91,7 +96,15 @@ public class MouseScript : MonoBehaviour
                     if (gameObject.name == card.name)
                     {
                         cardNameText.text = card.name;
-                        cardDescriptionText.text = card.civEffectText;
+
+                        if (PlayerState.isFiend == true)
+                        {
+                            cardDescriptionText.text = card.fiendEffectText;
+                        }
+                        else
+                        {
+                            cardDescriptionText.text = card.civEffectText;
+                        }
 
                         gameState.cardNameText.text = cardNameText.text;
                         gameState.cardDescriptionText.text = cardDescriptionText.text;
@@ -107,8 +120,16 @@ public class MouseScript : MonoBehaviour
                     if (gameObject.name == card.name)
                     {
                         cardNameText.text = card.name;
-                        cardDescriptionText.text = card.civEffectText;
 
+                        if (PlayerState.isFiend == true)
+                        {
+                            cardDescriptionText.text = card.fiendEffectText;
+                        }
+                        else
+                        {
+                            cardDescriptionText.text = card.civEffectText;
+                        }
+                        
                         gameState.cardNameText.text = cardNameText.text;
                         gameState.cardDescriptionText.text = cardDescriptionText.text;
 
@@ -123,7 +144,15 @@ public class MouseScript : MonoBehaviour
                     if (gameObject.name == card.name)
                     {
                         cardNameText.text = card.name;
-                        cardDescriptionText.text = card.civEffectText;
+
+                        if (PlayerState.isFiend == true)
+                        {
+                            cardDescriptionText.text = card.fiendEffectText;
+                        }
+                        else
+                        {
+                            cardDescriptionText.text = card.civEffectText;
+                        }
 
                         gameState.cardNameText.text = cardNameText.text;
                         gameState.cardDescriptionText.text = cardDescriptionText.text;

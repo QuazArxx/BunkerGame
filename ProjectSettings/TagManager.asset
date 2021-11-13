@@ -14,6 +14,8 @@ TagManager:
   - Trickster
   - Fiend
   - Canvas
+  - Join Button
+  - Host Button
   layers:
   - Default
   - TransparentFX
