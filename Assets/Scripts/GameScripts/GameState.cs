@@ -81,7 +81,7 @@ public class GameState : MonoBehaviour
             }
         }
 
-        float discardOffset = 0.03f;
+        float discardOffset = 0.02f;
         if (discard != null)
         {
             foreach (GameObject card in discard)
@@ -157,7 +157,7 @@ public class GameState : MonoBehaviour
 
         for (int x = 0; x < deck.Count; x++)
         {
-            GameObject newCard = Instantiate(cardPrefab, new Vector3(deckLocation.transform.position.x, deckLocation.transform.position.y, deckLocation.transform.position.z + offset), Quaternion.identity, deckLocation.transform);
+            GameObject newCard = Instantiate(cardPrefab, new Vector3(deckLocation.transform.position.x, deckLocation.transform.position.y, deckLocation.transform.position.z - 1.14f + offset), Quaternion.identity, deckLocation.transform);
 
             newCard.name = deck[x];
             newCard.tag = cardTypes[x];

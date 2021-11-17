@@ -10,7 +10,7 @@ public class TitleScreenHandler : MonoBehaviour
         switch (gameObject.tag)
         {
             case "StartGame":
-                SceneManager.LoadScene("MainBunkerScene", LoadSceneMode.Single);
+                SceneManager.LoadScene("MultiplayerMenu", LoadSceneMode.Single);
                 break;
             case "HowToPlay":
                 SceneManager.LoadScene("HowToPlay", LoadSceneMode.Single);

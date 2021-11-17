@@ -64,6 +64,8 @@ public class MouseScript : MonoBehaviour
 
     public void OnMouseOver()
     {
+        if (GameState.deck.Contains(gameObject.name)) return;
+
         switch (gameObject.tag)
         {
             case "Structure":
@@ -162,7 +164,7 @@ public class MouseScript : MonoBehaviour
                     }
                 }
                 break;
-            case "Deck":
+            case "Fiend":
                 break;
             default:
                 Debug.Log("Something went wrong!");
@@ -226,7 +228,7 @@ public class MouseScript : MonoBehaviour
                     }
                 }
                 break;
-            case "Deck":
+            case "Fiend":
                 break;
             default:
                 Debug.Log("Something went wrong!");

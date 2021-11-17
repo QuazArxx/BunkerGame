@@ -6,21 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Startup.unity
+    guid: 1b6612594bea38349925da93e2b0dc79
+  - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: 549d346a1acb5a641bf3eda7684db426
-  - enabled: 1
-    path: Assets/Scenes/MainBunkerScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/HowToPlay.unity
-    guid: ed507dd8736200f4ca35354d93e49df8
-  - enabled: 1
-    path: Assets/Scenes/EndGame.unity
-    guid: 0c97f699ccd0f864e93968d4b40eb525
   - enabled: 1
     path: Assets/Scenes/MultiplayerMenu.unity
     guid: 1ef9547686fc98a4e8ec99f60ce4b2e4
   - enabled: 1
-    path: Assets/Scenes/MultiplayerLobby.unity
-    guid: 64c7285a4742c064f9c34003ad6929e6
+    path: Assets/Scenes/HowToPlay.unity
+    guid: ed507dd8736200f4ca35354d93e49df8
+  - enabled: 1
+    path: Assets/Scenes/MainBunkerScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 0c97f699ccd0f864e93968d4b40eb525
   m_configObjects: {}
