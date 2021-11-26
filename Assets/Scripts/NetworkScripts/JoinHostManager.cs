@@ -9,8 +9,7 @@ public class JoinHostManager : MonoBehaviour
     public Text joinOrHost;
     public GameObject[] playerPrefab;
 
-    int players = 0;
-    int playerLimit = 6;
+    public NetworkPrefabHandler[] networkPrefabHandler;
 
     private void OnGUI()
     {
@@ -34,16 +33,11 @@ public class JoinHostManager : MonoBehaviour
         if (GUILayout.Button("Host"))
         {
             NetworkManager.Singleton.StartHost();
-            SpawnPlayer();
         }
 
         if (GUILayout.Button("Join"))
         {
             NetworkManager.Singleton.StartClient();
-            if (players < playerLimit)
-            {
-                SpawnPlayer();
-            }
         }
     }
 
@@ -56,9 +50,8 @@ public class JoinHostManager : MonoBehaviour
         GUILayout.Label($"Mode: {mode}");
     }
 
-    void SpawnPlayer()
+    public void OnMouseUpAsButton()
     {
-        NetworkManager.Instantiate(playerPrefab[Random.Range(0, playerPrefab.Length)]);
-        players++;
+        NetworkManager.Singleton.SceneManager.LoadScene("MainBunkerScene", UnityEngine.SceneManagement.LoadSceneMode.Single);
     }
 }
